@@ -1,0 +1,7 @@
+{
+  "name": "Delhivery Replica",
+  "description": "A high-fidelity logistics dashboard and tracking application inspired by Delhivery, featuring real-time tracking visualization, shipment management, cost estimation, and an AI-powered logistics assistant.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
