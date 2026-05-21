@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Delhivery Replica
 
-# Run and deploy your AI Studio app
+A high-fidelity **logistics dashboard and tracking application** inspired by Delhivery — real-time
+tracking visualization, shipment management, cost estimation, and an AI-powered logistics assistant.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1F0P2IwTBGlNaeGviIaF8Hdtb3po_IiIL
+- Real-time shipment tracking visualization (with geolocation permission)
+- Shipment management and status updates
+- Cost estimation
+- AI-powered logistics assistant (Gemini)
+- Charts and analytics (Recharts)
 
-## Run Locally
+## Stack
 
-**Prerequisites:**  Node.js
+- React + TypeScript + Vite
+- `@google/genai` (Gemini SDK) — the AI assistant
+- Recharts — charts
+- `lucide-react` — icons
 
+## Run locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+cp .env.example .env.local       # add your GEMINI_API_KEY
+npm run dev
+```
+
+Grant **geolocation** permission when prompted (needed for the tracking map).
+
+## Project layout
+
+```
+.
+├── index.html
+├── App.tsx
+├── index.tsx
+├── components/
+├── types.ts
+├── metadata.json
+└── vite.config.ts
+```
